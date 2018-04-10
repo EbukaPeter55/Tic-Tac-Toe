@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-A Tic Tac Toe game final project in ALC 2.0
+This is a Tic Tac toe game in which users can either play with the computer or play with another human player, Users can choose between either playing in the 3 * 3 board or a 5 * 5 board. A winner emmerges when a player places three or five x's or o's in an horizontally, vertically or diagonally manner on either of both boards respectively. In a situation when it is not attainable it leads to a draw. Users can clearly see and check their scores from the score board above. With a press on the Reset button, the scores and the game is resetted. 
