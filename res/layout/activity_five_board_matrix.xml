@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ceoebukapeter.tictactoegame3.FiveBoardMatrix">
+
+    <!--Score board for both players-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:freezesText="true"
+            android:text="@string/Player_1"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/text_view_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="8dp"
+            android:freezesText="true"
+            android:text="@string/Player_2"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+    <!--First row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/button_00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+    </LinearLayout>
+
+    <!--Second row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+
+    </LinearLayout>
+
+    <!--Third row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+
+        <Button
+            android:id="@+id/button_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+
+    </LinearLayout>
+
+    <!--Fourth row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/button_30"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_31"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/button_32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+
+        <Button
+            android:id="@+id/button_34"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+
+    </LinearLayout>
+
+    <!--Fifth row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/button_40"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/button_41"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/button_42"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_43"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+
+        <Button
+            android:id="@+id/button_44"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+
+    </LinearLayout>
+    <!--This button resets both the game and Score board-->
+    <Button
+        android:id="@+id/button_reset"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/reset"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+</LinearLayout>
